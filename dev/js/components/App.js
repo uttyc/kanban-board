@@ -13,6 +13,7 @@ class App extends React.Component{
         this.state = {
             name: ''
         };
+        this.addColumn = this.addColumn.bind(this);
     }
     addColumn(e){
         e.preventDefault();
@@ -29,14 +30,14 @@ class App extends React.Component{
 
     render(){
         return (
-            <div className="container">
+           <div className="container">
                 <h1 className="logo">KanBan Board</h1>
                 <hr />
                 <div className="row">
                     <form className="input-group col-md-3 pull-left" >
                         <input type="text" placeholder="Add Column" className="form-control" ref='colTitle'/>
                         <span className="input-group-btn">
-							<button className="input-group btn btn-primary" onClick={this.addColumn.bind(this)}>Add</button>
+							<button className="input-group btn btn-primary" onClick={this.addColumn()}>Add</button>
 						</span>
                     </form>
                     <div className="pull-right">
@@ -45,7 +46,6 @@ class App extends React.Component{
                 </div>
                 <hr />
                 <Board/>
-
             </div>
         );
     }

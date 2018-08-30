@@ -11,6 +11,7 @@
     "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",
     "babel-polyfill": "^6.9.1",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
     "babel-register": "^6.9.0",
@@ -36,7 +37,7 @@
     "uuid": "^3.0.1",
     "webpack": "^1.13.1",
     "webpack-dev-middleware": "^1.6.1",
-    "webpack-dev-server": "^1.14.1",
+    "webpack-dev-server": "^1.16.5",
     "webpack-hot-middleware": "^2.11.0"
   },
   "devDependencies": {

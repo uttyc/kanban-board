@@ -28,5 +28,9 @@ module.exports = {
     },
     plugins: [
         new webpack.optimize.OccurrenceOrderPlugin()
-    ]
+    ],
+    query: {
+      presets: ['es2015', 'react']
+    }
 };
+module.exports = exports;
